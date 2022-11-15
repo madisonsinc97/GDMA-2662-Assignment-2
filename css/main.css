@@ -39,6 +39,7 @@ which goes before in the triangle, eg. hide helper class
 html {
     font: .85rem 'Roboto Slab', serif;
     line-height: 2em;
+    color: #00515D;
 }
 
 /*--------------------------------------------------------------
@@ -58,12 +59,9 @@ h2 {
     font-weight: 400;
 }
 
-h2 {
-    font-size: 2.5rem;
-}
-
+h2,
 h3 {
-    font-size: 1.4rem;
+    margin-bottom: 0;
 }
 
 /* ----- TYPOGRAPHY ----- */
@@ -76,6 +74,31 @@ a {
 
 .fa-solid {
     color: #00515D;
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+header > div:last-child p {
+    font-size: 1.5rem;
+    line-height: 1.85em;
+    font-weight: 400;
+    padding-bottom: 4em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -281,6 +304,11 @@ a {
    6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+footer p,
+h4 {
+    margin: 0;
+}
+
 /* ----- HERO ----- */
 
 header > div:first-child {
@@ -289,12 +317,26 @@ header > div:first-child {
     border-bottom: .50em solid #FFD8DB;
     background-color: #fff;
     text-align: center;
+    margin-top: 0;
+}
+
+header > div:last-child {
+    background: url(../img/pink-balloons.jpg) no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain;
+    padding-top: 10em;
+    background-color: #FFD8DB;
+    text-align: center;
+    margin-top: 5em;
 }
 
 
 /* ----- NAV ----- */
 
-li {
+header li {
     display: inline-block;
     padding: 1em;
 }
@@ -307,6 +349,16 @@ a:hover {
     color: #00515D;
 }
 
+/* ----- SYSTEMS ----- */
+
+@media screen and (min-width: 768px) {
+    #systems {
+        text-align: center;
+        margin: 0;
+    }
+
+
+}
 
 
 /* ----- LAYOUT ----- */
@@ -316,12 +368,58 @@ a:hover {
     background-color: #FFD8DB;
 }
 
+/* ----- TESTING ----- */
 
-/* ----- WORKS ----- */
+@media screen and (min-width: 768px) {
+    #testing > div:first-child {
+        background: url(../img/rainbow-balloons.jpg) no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        -ms-background-size: contain;
+        background-size: contain;
+}
+
+
+/* ----- BENEFITS ----- */
+
+/* @media screen and (min-width: 768px) {
+    #benefits > div {
+        display: inline;
+    }
+} */
+
+#benefits {
+    text-align: center;
+    padding-bottom: 3.5em;
+}
+
+#benefits .fa-solid {
+    font-size: 3rem;
+}
 
 
 /* ----- FOOTER ----- */
 
+@media screen and (min-width: 768px) {
+    footer section {
+        justify-content: flex-start;
+    }
+
+
+}
+
+footer {
+    text-align: center;
+}
+
+footer li {
+    padding: .5em;
+}
+
+footer {
+    border-top: .50em solid #FFD8DB;
+}
 
 
 /*--------------------------------------------------------------
